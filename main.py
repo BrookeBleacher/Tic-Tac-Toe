@@ -10,7 +10,7 @@ symbol_size = (size_of_board / 3 - size_of_board / 8) / 2
 symbol_thickness = 35
 symbol_X_color = '#008000'
 symbol_O_color = '#FFA500'
-Green_color = '#7BC043'
+Purple_color = '#A36DF7'
 
 
 class Tic_Tac_Toe():
@@ -98,13 +98,13 @@ class Tic_Tac_Toe():
         self.canvas.create_text(size_of_board / 2, size_of_board / 3, font="cmr 60 bold", fill=color, text=text)
 
         score_text = 'Scores \n'
-        self.canvas.create_text(size_of_board / 2, 5 * size_of_board / 8, font="cmr 40 bold", fill=Green_color,
+        self.canvas.create_text(size_of_board / 2, 5 * size_of_board / 8, font="cmr 40 bold", fill=Purple_color,
                                 text=score_text)
 
         score_text = 'Player 1 (X) : ' + str(self.X_score) + '\n'
         score_text += 'Player 2 (O): ' + str(self.O_score) + '\n'
         score_text += 'Tie                    : ' + str(self.tie_score)
-        self.canvas.create_text(size_of_board / 2, 3 * size_of_board / 4, font="cmr 30 bold", fill=Green_color,
+        self.canvas.create_text(size_of_board / 2, 3 * size_of_board / 4, font="cmr 30 bold", fill=Purple_color,
                                 text=score_text)
         self.reset_board = True
 
